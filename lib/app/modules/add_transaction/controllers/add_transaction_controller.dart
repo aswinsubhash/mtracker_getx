@@ -5,8 +5,6 @@ import 'package:mtracker/app/modules/add_transaction/views/widget/amount_widget.
 import 'package:mtracker/app/modules/add_transaction/views/widget/category_widget.dart';
 import 'package:mtracker/app/modules/add_transaction/views/widget/datepick_widget.dart';
 import 'package:mtracker/app/modules/add_transaction/views/widget/transtype_widget.dart';
-import 'package:mtracker/app/modules/edit/views/widget/edit_amount.dart';
-import 'package:mtracker/app/modules/edit/views/widget/edit_category.dart';
 import 'package:mtracker/app/modules/home/views/dash_view.dart';
 
 class AddTransactionController extends GetxController {
@@ -17,10 +15,8 @@ class AddTransactionController extends GetxController {
   }
 
   void onButtonClick() {
-    final addTransactionController = Get.put(AddTransactionController());
     final dataController = Get.put(DataController());
     if (amount == 0 || category.isEmpty || amount == null) {
-     // addTransactionController.showError();
      showError();
     } else {
       final transaction = TransactionModel(
