@@ -8,7 +8,6 @@ import 'app/modules/settings/controllers/settings_controller.dart';
 import 'app/routes/app_pages.dart';
 
 const saveKey = 'profile name';
-const themeKey = "themekey";
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
