@@ -23,7 +23,6 @@ class DashView extends GetView {
         padding: const EdgeInsets.only(bottom: 1),
         child: GetBuilder<HomeController>(
           init: HomeController(),
-          initState: (_) {},
           builder: (context) {
             return SizedBox(
               height: 68,
