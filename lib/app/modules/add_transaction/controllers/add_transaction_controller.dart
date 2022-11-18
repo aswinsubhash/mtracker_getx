@@ -24,7 +24,7 @@ class AddTransactionController extends GetxController {
 
       dataController.addData(transaction);
 
-      Get.offAll(DashView());
+      Get.offAll(()=>DashView());
       amount = 0;
       category = '';
     }

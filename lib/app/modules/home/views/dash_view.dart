@@ -33,7 +33,7 @@ class DashView extends GetView {
                   backgroundColor:const Color.fromARGB(255, 101, 209, 190),
                   child: const Icon(Icons.add),
                   onPressed: () {
-                    Get.to(AddTransactionView());
+                    Get.to(()=>AddTransactionView());
                   },
                 ),
               ),

@@ -73,7 +73,7 @@ class AllTransactionController extends GetxController {
             borderRadius: BorderRadius.circular(20),
             onPressed: (BuildContext context) {
               dataController.updateIndex(index);
-              Get.to(EditView());
+              Get.to(()=>EditView());
             },
             backgroundColor: const Color.fromARGB(255, 3, 161, 22),
             label: 'Edit',
@@ -165,7 +165,7 @@ class AllTransactionController extends GetxController {
           borderRadius: BorderRadius.circular(20),
           onPressed: (BuildContext context) {
             dataController.updateIndex(index);
-            Get.to(EditView());
+            Get.to(()=>EditView());
           },
           backgroundColor: const Color.fromARGB(255, 3, 161, 22),
           label: 'Edit',
