@@ -13,7 +13,7 @@ class SplashController extends GetxController {
 
   void gotoonboard() async {
     await Future.delayed(const Duration(seconds: 3));
-    Get.off(OnboardingView());
+    Get.off(()=>OnboardingView());
   }
 
   void checkUserLoggedIn() async {
@@ -24,7 +24,7 @@ class SplashController extends GetxController {
       gotoonboard();
     } else {
       await Future.delayed(const Duration(seconds: 3));
-      Get.off(DashView());
+      Get.off(()=>DashView());
     }
   }
 

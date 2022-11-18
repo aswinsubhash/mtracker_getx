@@ -49,6 +49,6 @@ class DataController extends GetxController {
     transactionDataList.clear();
     final sharedprfns = await SharedPreferences.getInstance();
     sharedprfns.clear();
-    Get.offAll(SplashView());
+    Get.offAll(()=>SplashView());
   }
 }

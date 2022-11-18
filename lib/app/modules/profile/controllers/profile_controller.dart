@@ -10,7 +10,7 @@ class ProfileController extends GetxController {
     if (profilename.isNotEmpty) {
       await sharedprfns.setString(saveKey, profilename);
 
-      Get.off(DashView());
+      Get.off(()=>DashView());
     } else {
       Get.snackbar("Please enter a name", "");
     }

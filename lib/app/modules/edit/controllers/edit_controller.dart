@@ -41,11 +41,11 @@ class EditController extends GetxController {
           dataController.transactionDataList[dataController.listIndex].amount;
       editController.dataUpdate();
 
-      Get.off(DashView());
+      Get.off(()=>DashView());
       dataController.getAllData();
     } else {
       editController.dataUpdateto();
-      Get.off(DashView());
+      Get.off(()=>DashView());
     }
   }
 

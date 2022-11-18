@@ -36,7 +36,7 @@ class AllTransactionView extends GetView<AllTransactionController> {
     final allTransactionController = Get.put(AllTransactionController());
     return WillPopScope(
       onWillPop: () async {
-        Get.offAll(DashView());
+        Get.offAll(()=>DashView());
         return false;
       },
       child: Scaffold(
